@@ -34,10 +34,8 @@ function addCard() {
   duplicate.forEach((item, index) => {
     let card = document.createElement("div");
     card.classList.add("card");
-    card.classList.add("active");
     card.setAttribute("id", index);
     maincontainer.append(card);
-
     card.addEventListener("click", clickCard);
   });
 }
